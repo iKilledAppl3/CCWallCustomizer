@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = ccwallcustomizer;
+		cell = PSLinkCell;
+		detail = "ccwallcustomizerListController";
+		icon = "CCWallCustomizer.png";
+		isController = 1;
+		label = CCWallCustomizer;
+	};
+}

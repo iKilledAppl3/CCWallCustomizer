@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>condensed</key>
+			<true/>
+			<key>headerCellClass</key>
+			<string>HBPackageNameHeaderCell</string>
+			<key>icon</key>
+			<string>CCWallCustomizer.png</string>
+			<key>packageIdentifier</key>
+			<string>com.ikilledappl3.ccwallcustomizer</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.ikilledappl3.ccwallcustomizer-prefsreload</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.ikilledappl3.ccwallcustomizer</string>
+			<key>key</key>
+			<string>kEnabled</string>
+			<key>label</key>
+			<string>Enable Tweak</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Use Legacy Edition</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.ikilledappl3.ccwallcustomizer-prefsreload</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.ikilledappl3.ccwallcustomizer</string>
+			<key>key</key>
+			<string>kLegacy</string>
+			<key>label</key>
+			<string>Legacy Edition</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>legacyInfo</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>HBTintedTableCell</string>
+			<key>label</key>
+			<string>What's Legacy Edition?</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>This is for easier reading on darker backgrounds. </string>
+			<key>label</key>
+			<string>White Glyphs</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.ikilledappl3.ccwallcustomizer-prefsreload</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.ikilledappl3.ccwallcustomizer</string>
+			<key>key</key>
+			<string>whiteGlyphs</string>
+			<key>label</key>
+			<string>Use White Glyphs</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>This option will make most wallpapers look better by darkening the Control Center a bit.</string>
+			<key>label</key>
+			<string>Darken the CC Background</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.ikilledappl3.ccwallcustomizer-prefsreload</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.ikilledappl3.ccwallcustomizer</string>
+			<key>key</key>
+			<string>darkenWallEnabled</string>
+			<key>label</key>
+			<string>Darken Background</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Changes the button borders. Choose an option and respring to apply changes.</string>
+			<key>label</key>
+			<string>Button Border Options</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.ikilledappl3.ccwallcustomizer-prefsreload</string>
+			<key>cell</key>
+			<string>PSSegmentCell</string>
+			<key>default</key>
+			<string>0</string>
+			<key>defaults</key>
+			<string>com.ikilledappl3.ccwallcustomizer</string>
+			<key>key</key>
+			<string>kButtonBorders</string>
+			<key>validTitles</key>
+			<array>
+				<string>Stock</string>
+				<string>Solid Black</string>
+				<string>Dark</string>
+				<string>None</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<string>0</string>
+				<string>1</string>
+				<string>2</string>
+				<string>3</string>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Add an image or remove it with these options.</string>
+			<key>label</key>
+			<string>Control Center Image Options</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>imagePicked</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>HBTintedTableCell</string>
+			<key>label</key>
+			<string>Pick An Image</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>removeCCImage</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>HBTintedTableCell</string>
+			<key>label</key>
+			<string>Remove Image from Control Center</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Follow me on Twitter for support or just to follow!</string>
+			<key>label</key>
+			<string>Support</string>
+		</dict>
+		<dict>
+			<key>big</key>
+			<string>56</string>
+			<key>cellClass</key>
+			<string>HBTwitterCell</string>
+			<key>label</key>
+			<string>iKilledAppl3</string>
+			<key>user</key>
+			<string>iKilledAppl3</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Please consider donating it helps a lot!</string>
+			<key>label</key>
+			<string>Donate</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSLinkCell</string>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>icon</key>
+			<string>/Library/Application Support/CCWallCustomizer/paypal.png</string>
+			<key>label</key>
+			<string>Donate via PayPal</string>
+			<key>url</key>
+			<string>http://is.gd/donate2ToxicAppl3Inc</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Some items require a respring.</string>
+			<key>label</key>
+			<string>Respring</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>respring</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>HBTintedTableCell</string>
+			<key>label</key>
+			<string>Respring</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>CCWallCustomizer</string>
+</dict>
+</plist>
