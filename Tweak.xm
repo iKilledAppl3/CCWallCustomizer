@@ -30,6 +30,11 @@ if (darkenWallEnabled == YES && kEnabled == YES) {
 		%orig(1.0f);
 
      }
+	 
+	else if (kEnabled == YES) {
+		%orig(1.0f);
+	}
+	 
 	 else {
 		 %orig;
 		 
@@ -179,23 +184,22 @@ if (kButtonBorders == 1  && kEnabled == YES) {
 
 UIImageView *imgView =  [self valueForKey:@"_whiteLayerView"];
 
-UIImageView *imageView = [[UIImageView alloc] init];
+//UIImageView *imageView = [[UIImageView alloc] init];
 
-imageView.image = [UIImage imageWithContentsOfFile:customImgPath];
+imgView.image = [UIImage imageWithContentsOfFile:customImgPath];
 
  //fit to the view
-imageView.contentMode = UIViewContentModeScaleAspectFill;
- //set the image bounds to the view
-imageView.bounds = imgView.bounds;
- //set image frame to one in the view
-imageView.frame = imgView.frame;
+imgView.contentMode = UIViewContentModeScaleAspectFill;
  //make the image clips to bounds
-imageView.clipsToBounds = YES;
+imgView.clipsToBounds = YES;
  //fix landscape bug 
-imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+imgView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
 
+
+imgView.alpha = 1.0;
+[imgView.layer setOpaque:NO];
 //add the image view as a sub view of the background view 
-[imgView addSubview:imageView];
+//[imgView addSubview:imageView];
 
 	}
    else if (kLegacy == YES && kEnabled == YES) {

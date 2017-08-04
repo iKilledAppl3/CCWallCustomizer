@@ -1,7 +1,7 @@
 Package: com.ikilledappl3.ccwallcustomizer
 Name: CCWallCustomizer
 Depends: mobilesubstrate, ws.hbang.common
-Version: 1.2
+Version: 1.2.1
 Architecture: iphoneos-arm
 Description: change the background of the control center on iOS 10+
 Maintainer: iKilledAppl3 <ipodnewbee234@icloud.com>
