@@ -31,7 +31,7 @@ if (darkenWallEnabled == YES && kEnabled == YES) {
 
      }
 	 
-	else if (kEnabled == YES) {
+	 else if (kEnabled == YES && kLegacy == NO) {
 		%orig(1.0f);
 	}
 	 
